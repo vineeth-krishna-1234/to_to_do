@@ -31,6 +31,8 @@ npm run dev
 cd backend
 python -m venv env
 source ./env/bin/activate  # On Windows, use `env\Scripts\activate`
+echo "MONGO_CONNECTION_URL=mongodb://superadmin:verysecurepassword123@localhost:27017/" > .env
+echo "MONGO_DB_NAME=todoApp" >> .env
 python __main__.py
 ```
 
@@ -54,3 +56,18 @@ You should see the **To-Do App**.
 ❌ However, the **Docker Compose setup** is not yet complete.
 
 ---
+
+
+## 📌 Preview
+
+### 🖥️ Basic View  
+![Basic View](images/preview.png)
+
+### 📊 To-Do Data  
+![To-Do Data](images/preview_todo_data.png)
+
+### 🔍 Filter Options  
+![Filter Options](images/preview_filters.png)
+
+### ✏️ Create To-Do  
+![Create To-Do](images/preview_create_todo.png)
